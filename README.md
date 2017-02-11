@@ -16,30 +16,30 @@ You need to install the following in order to run this project:
 ### Setting it up
 1. Make sure you have [Node.js](https://nodejs.org/) installed.
 
-2. Install the Express framework, by running this command:  
+2. Install the Express framework, by running this command:
 `npm install --save express@4.10.2`
 
-3. Install the socket.io server:  
+3. Install the socket.io server:
 `npm install socket.io`
 
-4. Include **socket.io** and **jQuery** in your HTML file. Here's how to do it using their CDNs:  
+4. Include **socket.io** and **jQuery** in your HTML file. Here's how to do it using their CDNs:
     ```javascript
     <script src="https://code.jquery.com/jquery-1.11.2.min.js" integrity="sha256-Ls0pXSlb7AYs7evhd+VLnWsZ/AqEHcXBeMZUycz/CcA=" crossorigin="anonymous"></script>
     <script src="https://cdn.socket.io/socket.io-1.4.5.js"></script>
-    ```  
-Obviously, the code above will load jQuery v1.11.2 and socket.io v1.4.5. You have to visit their official websites ([jQuery](https://code.jquery.com/), [socket.io](http://socket.io/download/)) to get the latest versions.  
+    ```
+Obviously, the code above will load jQuery v1.11.2 and socket.io v1.4.5. You have to visit their official websites ([jQuery](https://code.jquery.com/), [socket.io](http://socket.io/download/)) to get the latest versions.
 
-5. Include this project's **whiteboard.js** in your client's html file  
+5. Include this project's **whiteboard.js** in your client's html file
     ```javascript
     <script src="whiteboard.js"></script>
-    ```  
+    ```
 
-6. You have to call `whiteboard.init`from your JavaScript code, passing your canvas jQuery object and your socket. For example:  
+6. You have to create a Whiteboard instance using `new Whiteboard`, passing your canvas jQuery object, your socket and optionally a default color and thickness. For example:
     ```javascript
-    whiteboard.init($("#myCanvas"), socket);
-    ```  
+    var whiteboard = new Whiteboard($("#myCanvas"), socket);
+    ```
 
-7. Add the following code to your server's js file:  
+7. Add the following code to your server's js file:
     ```javascript
     socket.on("draw", function(data) {
       socket.broadcast.emit("draw", data);
@@ -54,7 +54,7 @@ For the complete code of these files, check the *demo* folder.
 ### Usage example
 Below you can find a basic example with simple server.js and index.html files.
 
-**server.js (the server side):**  
+**server.js (the server side):**
 ```javascript
 var express = require("express");
 var app = express();
@@ -72,7 +72,7 @@ io.on("connection", function(socket) {
   socket.on("draw", function(data) {
     socket.broadcast.emit("draw", data);
   });
-  
+
   socket.on("draw begin path", function() {
     socket.broadcast.emit("draw begin path");
   });
@@ -88,25 +88,26 @@ http.listen(3000, function() {
 <!DOCTYPE HTML>
 <html lang="en">
   <head>
+    <meta charset="utf-8">
     <title>Demo - Client side</title>
   </head>
   <body>
     <!-- Note that the id of our canvas is #myCanvas -->
     <canvas id="myCanvas"></canvas>
-    
+
     <!-- Import jQuery, socket.io and our whiteboard.js -->
     <script src="https://code.jquery.com/jquery-1.11.2.min.js" integrity="sha256-Ls0pXSlb7AYs7evhd+VLnWsZ/AqEHcXBeMZUycz/CcA=" crossorigin="anonymous"></script>
     <script src="https://cdn.socket.io/socket.io-1.4.5.js"></script>
     <script src="js/whiteboard.js"></script>
-    
+
     <!-- Our JavaScript code, normally this would be in a .js file -->
     <script type="text/javascript">
       var socket = io();
       socket.on("connect", function() {
         /* at this point we have connected to the server,
-        so we can call our initialization function.
-        We pass our canvas (#myCanvas) and socket */
-        whiteboard.init($("#myCanvas"), socket);
+        so we can create a new Whiteboard instance.
+        We pass our canvas (`#myCanvas`) and socket */
+        var whiteboard = new Whiteboard($("#myCanvas"), socket);
       });
     </script>
   </body>
@@ -118,7 +119,7 @@ If you just want to test this example locally on your computer, run `node server
 ### Usage
 The example above has the bare minimum functionality to keep it as simple as possible. In a real-world scenario you would have to change the color, the thickness of the line etc.
 
-These are the public functions you'll find in the whiteboard.js file:
+These are the public functions you'll find in the `whiteboard.js` file:
 
 | Function                              | Explanation                                                                   |
 | ------------------------------------- | ----------------------------------------------------------------------------- |
@@ -131,4 +132,4 @@ These are the public functions you'll find in the whiteboard.js file:
 | `whiteboard.download(filename)`       | Exports the canvas drawing as an image file and saves it with the given name  |
 
 ### License
-The MIT License, check the LICENSE file.
+The MIT License, check the `LICENSE` file.

@@ -29,9 +29,9 @@
 			var socket = io();
 			socket.on("connect", function() {
 				/* at this point we have connected to the server,
-				so we can call our initialization function.
-				We pass our canvas (#myCanvas) and socket */
-				whiteboard.init($("#myCanvas"), socket);
+				 so we can create a new Whiteboard instance.
+				 We pass our canvas (`#myCanvas`) and socket */
+				var whiteboard = new Whiteboard($("#myCanvas"), socket);
 			});
 		</script>
 	</body>
