@@ -119,9 +119,9 @@ If you just want to test this example locally on your computer, run `node server
 ### Usage
 The example above has the bare minimum functionality to keep it as simple as possible. In a real-world scenario you would have to change the color, the thickness of the line etc.
 
-These are the public functions you'll find in the `whiteboard.js` file:
+These are the public methods you'll find in the `whiteboard.js` file:
 
-| Function                              | Explanation                                                                   |
+| Method                                | Explanation                                                                   |
 | ------------------------------------- | ----------------------------------------------------------------------------- |
 | `whiteboard.color = newValue`         | Sets the line color to the given value                                        |
 | `whiteboard.color`                    | Returns the current color of the line                                         |
