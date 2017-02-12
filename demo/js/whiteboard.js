@@ -17,7 +17,7 @@ var Whiteboard = (function($, window) {
 	 *
 	 * @param {jQuery} $canvas              The canvas jQuery object
 	 * @param {socket} socket               The socket.io socket, so we
-	 *                                      can send/received drawing data
+	 *                                      can send/receive drawing data
 	 * @param {string} [color="#4d4d4d"]    The default color
 	 * @param {number} [thickness=4]        The default thickness
 	 * @constructor
@@ -31,6 +31,7 @@ var Whiteboard = (function($, window) {
 		}
 
 		_canvas = $canvas[0];
+		_ctx = _canvas.getContext("2d");
 		_color = color;
 		_thickness = thickness;
 

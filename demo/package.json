@@ -1,6 +1,6 @@
 {
   "name": "socket.io-whiteboard-demo",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "HTML5 canvas real-time drawing using socket.io demo",
   "dependencies": {
     "express": "^4.10.2",
