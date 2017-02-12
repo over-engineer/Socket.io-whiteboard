@@ -123,13 +123,15 @@ These are the public functions you'll find in the `whiteboard.js` file:
 
 | Function                              | Explanation                                                                   |
 | ------------------------------------- | ----------------------------------------------------------------------------- |
-| `whiteboard.setColor(val)`            | Sets the line color to the given value                                        |
-| `whiteboard.getColor()`               | Returns the current color of the line                                         |
-| `whiteboard.setThickness(val)`        | Sets the line thickness to the given value                                    |
-| `whiteboard.getThickness()`           | Returns the current thickness of the line                                     |
+| `whiteboard.color = newValue`         | Sets the line color to the given value                                        |
+| `whiteboard.color`                    | Returns the current color of the line                                         |
+| `whiteboard.thickness = newValue`     | Sets the line thickness to the given value                                    |
+| `whiteboard.thickness`                | Returns the current thickness of the line                                     |
 | `whiteboard.increaseThickness(step)`  | Increases the thickness of the line by the given step                         |
 | `whiteboard.decreaseThickness(step)`  | Decreases the thickness of the line by the given step                         |
 | `whiteboard.download(filename)`       | Exports the canvas drawing as an image file and saves it with the given name  |
+
+In the above table `whiteboard` in an instance of `Whiteboard`
 
 ### License
 The MIT License, check the `LICENSE` file.
