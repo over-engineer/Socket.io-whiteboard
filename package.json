@@ -1,0 +1,37 @@
+{
+  "name": "socketio-whiteboard",
+  "version": "1.0.0",
+  "description": "HTML5 canvas real-time drawing using socket.io",
+  "main": "demo/server.js",
+  "scripts": {
+    "start": "node demo/server.js",
+    "dev": "nodemon demo/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "node": "11.4.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/over-engineer/Socket.io-whiteboard.git"
+  },
+  "author": "over-engineer",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/over-engineer/Socket.io-whiteboard/issues"
+  },
+  "homepage": "https://github.com/over-engineer/Socket.io-whiteboard#readme",
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb": "^17.1.1",
+    "eslint-config-airbnb-base": "^13.2.0",
+    "eslint-plugin-import": "^2.18.0",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.14.2",
+    "nodemon": "^1.19.1"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "socket.io": "^2.2.0"
+  }
+}
