@@ -33,8 +33,8 @@ This is a simplified version of the JavaScript code I use for a sketch guessing 
 2. Include this library in your client-side code
 
     ```html
-    <script src="https://cdn.jsdelivr.net/gh/over-engineer/Socket.io-whiteboard/lib/whiteboard.js" 
-            integrity="sha384-FlDHLCQSFbcUq5CJcPJXlkXgnc27L9WQgcNExYOd6jdb9zfM/jA1xQ5MyCpOqsma" 
+    <script src="https://cdn.jsdelivr.net/gh/over-engineer/Socket.io-whiteboard@latest/lib/whiteboard.js" 
+            integrity="sha384-OxG0vnN5ndLgxpkiJC7DT1F8SEP4mI9Q251UvVoO+TL4j4PX32GktJ7e3E1oei+W" 
             crossorigin="anonymous"></script>
     ```
 
