@@ -21,7 +21,9 @@ This is a simplified version of the JavaScript code I use for a sketch guessing 
 2. Include this library in your client-side code
 
     ```html
-    <script src="https://cdn.jsdelivr.net/gh/over-engineer/Socket.io-whiteboard/lib/whiteboard.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/over-engineer/Socket.io-whiteboard/lib/whiteboard.js" 
+            integrity="sha384-FlDHLCQSFbcUq5CJcPJXlkXgnc27L9WQgcNExYOd6jdb9zfM/jA1xQ5MyCpOqsma" 
+            crossorigin="anonymous"></script>
     ```
 
 3. Create a Whiteboard instance using `new Whiteboard()`, passing your canvas, your socket and optionally a default color and thickness.
