@@ -100,13 +100,12 @@ These are the public methods you'll find in the `/lib/whiteboard.js` file:
 | `whiteboard.decreaseThickness(step)`  | Decreases the thickness of the line by the given step                         |
 | `whiteboard.download(filename)`       | Exports the canvas drawing as an image file and saves it with the given name  |
 
-In the above table `whiteboard` in an instance of `Whiteboard`
+In the above table `whiteboard` is an instance of `Whiteboard`
 
 ## 🗄 Dependencies
 
-- [socket.io](http://socket.io/)
 - [Node.js](https://nodejs.org/)
-- [Express](http://expressjs.com/)
+- [socket.io](http://socket.io/)
 
 ## 📖 License
 
