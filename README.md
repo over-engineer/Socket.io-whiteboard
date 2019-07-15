@@ -4,9 +4,19 @@
 [![GitHub last commit](https://img.shields.io/github/last-commit/over-engineer/Socket.io-whiteboard.svg)](/)
 [![Demo](https://img.shields.io/static/v1.svg?label=Demo&message=Heroku&color=blueviolet)](http://socketio-whiteboard.herokuapp.com/)
 
-HTML5 canvas real-time drawing using socket.io
+🎨 HTML5 canvas real-time drawing using socket.io
 
-## 📒 What is this?
+## Table of Contents
+
+* [What is this?](#-what-is-this)
+* [Installation](#-installation)
+* [Demo](#-demo)
+* [Documentation](#-documentation)
+* [Dependencies](#-dependencies)
+* [License](#-license)
+
+
+## 🖌 What is this?
 
 This is a simplified version of the JavaScript code I use for a sketch guessing multiplayer game I'm working on. Keep in mind that it's still under development as I'm experimenting with different ways to build this. Still, this could be a nice start for similar projects.
 
