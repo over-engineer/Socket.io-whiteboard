@@ -2,7 +2,7 @@
 
 [![GitHub](https://img.shields.io/github/license/over-engineer/Socket.io-whiteboard.svg)](/LICENSE)
 [![GitHub last commit](https://img.shields.io/github/last-commit/over-engineer/Socket.io-whiteboard.svg)](/)
-[![Demo](https://img.shields.io/static/v1.svg?label=Demo&message=Heroku&color=blueviolet)](https://socketio-whiteboard.herokuapp.com/)
+[![Demo](https://img.shields.io/static/v1.svg?label=demo&message=Heroku&color=blueviolet)](https://socketio-whiteboard.herokuapp.com/)
 
 🎨 HTML5 canvas real-time drawing using socket.io
 
@@ -52,6 +52,10 @@ This is a simplified version of the JavaScript code I use for a sketch guessing 
 ## 🎉 Demo
 
 Check out the [demo](https://socketio-whiteboard.herokuapp.com/) (open the console!)
+
+You can also:
+
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
 …or do it yourself:
 
