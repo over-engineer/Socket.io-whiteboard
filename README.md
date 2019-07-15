@@ -1,6 +1,8 @@
 # Socket.io whiteboard
 
-![GitHub](https://img.shields.io/github/license/over-engineer/Socket.io-whiteboard.svg)
+[![GitHub](https://img.shields.io/github/license/over-engineer/Socket.io-whiteboard.svg)](/LICENSE)
+[![GitHub last commit](https://img.shields.io/github/last-commit/over-engineer/Socket.io-whiteboard.svg)](/)
+[![Demo](https://img.shields.io/static/v1.svg?label=Demo&message=Heroku&color=blueviolet)](http://socketio-whiteboard.herokuapp.com/)
 
 HTML5 canvas real-time drawing using socket.io
 
