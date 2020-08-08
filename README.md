@@ -18,7 +18,7 @@
 
 ## 🖌 What is this?
 
-This is a simplified version of the JavaScript code I use for a sketch guessing multiplayer game I'm working on. Keep in mind that it's still under development as I'm experimenting with different ways to build this. Still, this could be a nice start for similar projects.
+This is a simplified version of the JavaScript code I use for a sketch guessing multiplayer game ~~I'm working on~~ I used to work on. Keep in mind that it's ~~still under development as I'm experimenting with different ways to build this. Still, this could be a nice start for similar projects~~ a very bare-bones version, which is only useful as a starting point for your own projects.
 
 ## 📦 Installation
 
@@ -33,8 +33,8 @@ This is a simplified version of the JavaScript code I use for a sketch guessing 
 2. Include this library in your client-side code
 
     ```html
-    <script src="https://cdn.jsdelivr.net/gh/over-engineer/Socket.io-whiteboard/lib/latest/whiteboard.js" 
-            integrity="sha384-0SpYdGaHioGkmKzEXMXv+KuDDa9JxaQKrUyAnfocU3GxV8206NHFkT6qlRZh/Kpk" 
+    <script src="https://cdn.jsdelivr.net/gh/over-engineer/Socket.io-whiteboard/lib/whiteboard.js"
+            integrity="sha384-lGajmend6yDyTY9CZMgcIQX0sFVzYbN+1WzaofEQ8+z8BXbH/DuYPohTY7OCQbQt"
             crossorigin="anonymous"></script>
     ```
 
