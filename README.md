@@ -33,8 +33,8 @@ This is a simplified version of the JavaScript code I use for a sketch guessing 
 2. Include this library in your client-side code
 
     ```html
-    <script src="https://cdn.jsdelivr.net/gh/over-engineer/Socket.io-whiteboard/lib/whiteboard.js"
-            integrity="sha384-lGajmend6yDyTY9CZMgcIQX0sFVzYbN+1WzaofEQ8+z8BXbH/DuYPohTY7OCQbQt"
+    <script src="https://cdn.jsdelivr.net/gh/over-engineer/Socket.io-whiteboard@1.1.1/lib/whiteboard.js"
+            integrity="sha384-RceltRoqS8zq7xl4btt0biBpy99d2+11CCTBAmBgfTkXshR6iIr5Lap4tXBA/lnh"
             crossorigin="anonymous"></script>
     ```
 
@@ -99,6 +99,7 @@ These are the public methods you'll find in the `/lib/whiteboard.js` file:
 | `whiteboard.increaseThickness(step)`  | Increases the thickness of the line by the given step                         |
 | `whiteboard.decreaseThickness(step)`  | Decreases the thickness of the line by the given step                         |
 | `whiteboard.download(filename)`       | Exports the canvas drawing as an image file and saves it with the given name  |
+| `whiteboard.clear()`                  | Clear the entire canvas                                                       |
 
 In the above table `whiteboard` is an instance of `Whiteboard`
 
